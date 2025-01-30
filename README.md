@@ -6,6 +6,11 @@
 ```
 dc(itterable)
 > itterable
+
+or
+
+deepcopy(itterable)
+> itterable
 ```
 deepcopyされたitterableが出力される
 
