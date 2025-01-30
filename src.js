@@ -14,8 +14,8 @@ function resize(){
         for (i of texts){
             if (i[2]){
                 var temp = document.getElementById(i[0]).innerText.length
-                $(`#${i[0]}`).css({'position': 'absolute','width' : (String(W)*i[i]/(100*temp)) + 'px'})
-            } else $(`#${i[0]}`).css({'position': 'absolute','width' : (String(W)*i[i]/100) + 'px'})
+                $(i[0]).css({'position': 'absolute','width' : (String(W)*i[i]/(100*temp)) + 'px'})
+            } else $(i[0]).css({'position': 'absolute','width' : (String(W)*i[i]/100) + 'px'})
         }
     } else {
         $('.kawa').css({'position': 'relative', 'margin-top' : 0, 'margin-left' : String((W-(16/9)*H)/2) + 'px'})
@@ -23,8 +23,8 @@ function resize(){
         for (i of texts){
             if (i[2]){
                 var temp = document.getElementById(i[0]).innerText.length
-                $(`#${i[0]}`).css({'position': 'absolute','width' : (String((16/9)*H)*i[i]/(100*temp)) + 'px'})
-            } else $(`#${i[0]}`).css({'position': 'absolute','width' : (String((16/9)*H)*i[i]/100) + 'px'})
+                $(i[0]).css({'position': 'absolute','width' : (String((16/9)*H)*i[i]/(100*temp)) + 'px'})
+            } else $(i[0]).css({'position': 'absolute','width' : (String((16/9)*H)*i[i]/100) + 'px'})
         }
     }
 }
