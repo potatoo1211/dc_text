@@ -15,7 +15,7 @@ deepcopyされたitterableが出力される
 
 ### text with %
 ```JS
-text(id-or-class, percent, sizetype = false)
+text(id_or_class, percent, sizetype = false)
 > none
 ```
 > idなら前に`#`、classなら前に`.`をつける
