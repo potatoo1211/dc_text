@@ -21,4 +21,4 @@ sizetype = true
 > text全体で`percent`%
 
 ## 導入方法
-`<script src=>`
+`<script src='src.js'>`
