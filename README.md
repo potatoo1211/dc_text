@@ -1,6 +1,7 @@
 # dc_text
 ## ※川魂専用
 
+## 使い方
 ### deepcopy
 ```
 dc(itterable)
@@ -18,3 +19,6 @@ sizetype = false
 
 sizetype = true
 > text全体で`percent`%
+
+## 導入方法
+`<script src=>`
