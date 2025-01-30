@@ -1,4 +1,5 @@
-function dc(iter){return JSON.parse(JSON.stringify(iter))}
+function deepcopy(iter){return JSON.parse(JSON.stringify(iter))}
+let dc = deepcopy
 let texts = []
 let W = window.innerWidth
 let H = window.innerHeight
