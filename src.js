@@ -4,6 +4,7 @@ let W = window.innerWidth
 let H = window.innerHeight
 function text(id,percent,sizetype = false){
     texts.push([id,percent,sizetype])
+    resize()
 }
 function resize(){
     if (16*H > 9*W) {
@@ -26,6 +27,7 @@ function resize(){
         }
     }
 }
+resize()
 window.addEventListener('resize', function(){
     W = window.innerWidth
     H = window.innerHeight
