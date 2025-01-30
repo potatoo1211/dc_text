@@ -22,5 +22,6 @@ sizetype = true
 
 ## 導入方法
 `<script src='https://github.com/Team-kawatama/dc_text/releases/download/text/src.js'>`
+
 もしくは
 [Releases](https://github.com/Team-kawatama/dc_text/releases/tag/text)からsrc.jsをダウンロードする
