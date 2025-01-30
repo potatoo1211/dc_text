@@ -15,9 +15,11 @@ deepcopyされたitterableが出力される
 
 ### text with %
 ```JS
-text(id, percent, sizetype = false)
+text(id-or-class, percent, sizetype = false)
 > none
 ```
+> idなら前に`#`、classなら前に`.`をつける
+
 sizetype = false
 > textの1文字が`percent`%
 
