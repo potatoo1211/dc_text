@@ -28,7 +28,7 @@ sizetype = true
 
 ## 導入方法
 ```HTML
-<script src='https://github.com/Team-kawatama/dc_text/releases/download/text/src.js'>
+<script src='https://github.com/Team-kawatama/dc_text/releases/download/text/src.js'></script>
 ```
 
 もしくは
