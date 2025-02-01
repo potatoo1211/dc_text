@@ -36,8 +36,13 @@ mt.nextInt(min,max)
 >int
 ```
 変数0...[0,2<sup>32</sup>)
+
 変数1…[0,max)
+
 変数2…[min,max)
+
+
+詳しくは[こちら](https://magicant.github.io/sjavascript/mt.html#api-setSeed)
 
 ## 導入方法
 ```HTML
