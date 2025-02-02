@@ -46,8 +46,8 @@ mt.nextInt(min,max)
 
 ## 導入方法
 ```HTML
-<script src='https://github.com/Team-kawatama/dc_text/releases/download/v1.1.0/src.js'></script>
+<script src='https://github.com/Team-kawatama/dc_text/releases/download/v1.2.0/src.js'></script>
 ```
 
 もしくは
-[Releases](https://github.com/Team-kawatama/dc_text/releases/tag/v1.1.0)からsrc.jsをダウンロードする
+[Releases](https://github.com/Team-kawatama/dc_text/releases/tag/v1.2.0)からsrc.jsをダウンロードする
