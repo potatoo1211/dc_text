@@ -1,10 +1,15 @@
 function deepcopy(iter){return JSON.parse(JSON.stringify(iter))}
 let dc = deepcopy
 let texts = []
+let divs = []
 let W = window.innerWidth
 let H = window.innerHeight
 function text(id,percent,sizetype = false){
     texts.push([id,percent,sizetype])
+    resize()
+}
+function _div(id,percent,margin = 0){
+    texts.push([id,percent,margin])
     resize()
 }
 function resize(){
@@ -13,18 +18,24 @@ function resize(){
         $('.tama').css({'position': 'relative', 'width' : String(W) + 'px', 'height' : String((9/16)*W)})
         for (var i of texts){
             if (i[2]){
-                var temp = document.getElementById(i[0]).innerText.length
-                $(i[0]).css({'position': 'absolute','width' : String(W*i[1]/(100*temp)) + 'px'})
-            } else $(i[0]).css({'position': 'absolute','width' : String(W*i[1]/100) + 'px'})
+                var temp = $(i[0]).text().length
+                $(i[0]).css({'position': 'absolute','font-size' : String(W*i[1]/(100*temp)) + 'px'})
+            } else $(i[0]).css({'position': 'absolute','font-size' : String(W*i[1]/100) + 'px'})
+        }
+		for (var i of divs){
+			$(i[0]).css({'position': 'absolute','width' : String(W*i[1]/100) + 'px',"margin-left": String(W*i[2]/100)+"px","margin-right": String(W*i[2]/100)+"px"})
         }
     } else {
         $('.kawa').css({'position': 'relative', 'margin-top' : 0, 'margin-left' : String((W-(16/9)*H)/2) + 'px'})
         $('.tama').css({'position': 'relative', 'width' : String((16/9)*H) + 'px', 'height' : String(H)})
         for (var i of texts){
             if (i[2]){
-                var temp = document.getElementById(i[0]).innerText.length
-                $(i[0]).css({'position': 'absolute','width' : String((16/9)*H*i[1]/(100*temp)) + 'px'})
-            } else $(i[0]).css({'position': 'absolute','width' : String((16/9)*H*i[1]/100) + 'px'})
+                var temp = $(i[0]).text().length
+                $(i[0]).css({'position': 'absolute','font-size' : String((16/9)*H*i[1]/(100*temp)) + 'px'})
+            } else $(i[0]).css({'position': 'absolute','font-size' : String((16/9)*H*i[1]/100) + 'px'})
+        }
+		for (var i of divs){
+			$(i[0]).css({'position': 'absolute','width' : String(W*i[1]/100) + 'px',"margin-left": String(W*i[2]/100)+"px","margin-right": String(W*i[2]/100)+"px"})
         }
     }
 }
