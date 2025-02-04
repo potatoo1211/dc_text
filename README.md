@@ -13,6 +13,13 @@ deepcopy(itterable)
 ```
 deepcopyされたitterableが出力される
 
+### div with %
+```JS
+_div(id_or_class, percent, margin)
+> none
+```
+> idなら前に`#`、classなら前に`.`をつける
+
 ### text with %
 ```JS
 text(id_or_class, percent, sizetype = false)
@@ -25,6 +32,7 @@ sizetype = false
 
 sizetype = true
 > text全体で`percent`%
+
 
 ### Mersenne Twister
 ```JS
