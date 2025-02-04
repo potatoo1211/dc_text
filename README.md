@@ -27,9 +27,9 @@ sizetype = true
 > text全体で`percent`%
 
 
-### text with %
+### div with %
 ```JS
-text(id_or_class, percent, margin)
+_div(id_or_class, percent, margin)
 > none
 ```
 > idなら前に`#`、classなら前に`.`をつける
