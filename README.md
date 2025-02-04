@@ -26,6 +26,15 @@ sizetype = false
 sizetype = true
 > text全体で`percent`%
 
+
+### text with %
+```JS
+text(id_or_class, percent, margin)
+> none
+```
+> idなら前に`#`、classなら前に`.`をつける
+
+
 ## 導入方法
 ```HTML
 <script src='https://github.com/Team-kawatama/dc_text/releases/download/text/src.js'>
